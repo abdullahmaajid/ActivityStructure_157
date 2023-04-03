@@ -6,7 +6,7 @@ using namespace std;
 struct AlamatDetail
 {
 	string desa;
-	string nama;
+	string kota;
 };
 
 struct Mahasiswa
@@ -17,4 +17,26 @@ struct Mahasiswa
 	int		umur;
 };
 
-int main()
+int main() {
+
+	Mahasiswa mhs;
+
+	cout << "Masukkan NIM : ";
+	cin >> mhs.nim;
+	cout << "Masukkan Nama :";
+	cin >> mhs.nama;
+	cout << "Alamat" << endl;
+	cout << "\t Desa : ";
+	cin >> mhs.alamat.desa;
+	cout << "\t Kota : ";
+	cin >> mhs.alamat.kota;
+	cout << "Masukkan Umur : ";
+	cin >> mhs.umur;
+
+	cout << "\n NIM : " << mhs.nim;
+	cout << "\n Nama : " << mhs.nama;
+	cout << "\n Desa : " << mhs.alamat.desa;
+	cout << "\n Kota : " << mhs.alamat.kota;
+}
+
+
